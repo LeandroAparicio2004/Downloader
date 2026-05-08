@@ -1,0 +1,37 @@
+---Archivos Clave en la Carpeta---
+
+downloader.py: El código fuente principal
+
+ffmpeg.exe y ffprobe.exe: Los "motores" que convierten el video a MP3. Sin ellos, el programa falla
+
+config.json: Guarda la última ruta de descarga seleccionada
+
+icono.ico: El icono usado para el ejecutable
+
+dist/downloader.exe: La aplicación lista para usar en cualquier PC
+
+---Funciones Especiales---
+
+Memoria de Ruta: No necesitas elegir la carpeta cada vez; el programa recuerda dónde guardaste la música por última vez
+
+Botón Cancelar: Detiene la cola de descargas de forma segura (termina la canción actual y frena las siguientes)
+
+Descarga Masiva: Puedes pegar nombres de canciones o links de Playlists de YouTube (descargará todos los videos de la lista)
+
+----Colores de Consola----
+
+Blanco: Indica que el programa está buscando o iniciando el proceso
+
+Verde: Éxito total. La canción ya es un MP3 en tu carpeta
+
+Rojo: Error (generalmente por falta de internet o link roto)
+
+----Dependencias----
+
+yt-dlp: El motor que se encarga de buscar y descargar el contenido de YouTube
+
+customtkinter: La librería que usamos para que la interfaz se vea moderna y oscura
+
+packaging: Una dependencia auxiliar que utiliza CustomTkinter para gestionar versiones
+
+Instalar todas las dependencias: pip install yt-dlp customtkinter packaging
